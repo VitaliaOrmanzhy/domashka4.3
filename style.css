@@ -88,7 +88,8 @@ body {
   margin-bottom: 30px;
 }
 
-.heading {
+.heading h1 {
+  font-size: 38px;
   font-family: 'Raleway', sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -96,10 +97,6 @@ body {
   line-height: 42px;
   color: black;
   text-transform: uppercase;
-}
-
-.heading h1 {
-  font-size: 38px;
 }
 
 .link__num {
@@ -331,6 +328,10 @@ body {
 @media (max-width: 600px) {
   .section-1 {
     grid-template-columns: 1fr;
+  }
+
+  .heading h1 {
+    font-size: 30px;
   }
 
   .link {
