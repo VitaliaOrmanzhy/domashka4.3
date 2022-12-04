@@ -343,28 +343,8 @@ body {
     display: none;
   }
 
-  .image1 {
-    order: 1;
-  }
-
-  .link1 {
-    order: 2;
-  }
-
-  .image2 {
-    order: 3;
-  }
-
-  .link2 {
-    order: 4;
-  }
-
-  .image3 {
-    order: 5;
-  }
-
-  .link3 {
-    order: 6;
+  .image1, .image2, .image3 {
+    display: none;
   }
 
   .section-1 .heading-container {
@@ -385,6 +365,10 @@ body {
 
   .section-2__list {
     grid-column: 1 / 5;
-    justify-self: center;
+    justify-content: center;
+  }
+
+  .section-2__list-item {
+    margin-bottom: 60px;
   }
 }
