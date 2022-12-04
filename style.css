@@ -1,55 +1,55 @@
 @font-face {
-  font-family: "Raleway";
-  src: url("/fonts/Raleway-Regular.ttf") format("opentype"),
-    url("/fonts/Raleway-Regular.otf") format("opentype"),
-    url("/fonts/Raleway-Regular.woff") format("woff"),
-    url("/fonts/Raleway-Regular.woff2") format("woff2");
-  src: local("Raleway");
+  font-family: 'Raleway';
+  src: url('/fonts/Raleway-Regular.ttf') format('opentype'),
+    url('/fonts/Raleway-Regular.otf') format('opentype'),
+    url('/fonts/Raleway-Regular.woff') format('woff'),
+    url('/fonts/Raleway-Regular.woff2') format('woff2');
+  src: local('Raleway');
   font-weight: 400;
   font-style: normal;
   display: optional;
 }
 
 @font-face {
-  font-family: "Raleway";
-  src: url("/fonts/Raleway-Bold.ttf") format("opentype"),
-    url("/fonts/Raleway-Bold.otf") format("opentype"),
-    url("/fonts/Raleway-Bold.woff") format("woff"),
-    url("/fonts/Raleway-Bold.woff2") format("woff2");
-  src: local("Raleway");
+  font-family: 'Raleway';
+  src: url('/fonts/Raleway-Bold.ttf') format('opentype'),
+    url('/fonts/Raleway-Bold.otf') format('opentype'),
+    url('/fonts/Raleway-Bold.woff') format('woff'),
+    url('/fonts/Raleway-Bold.woff2') format('woff2');
+  src: local('Raleway');
   font-weight: 700;
   font-style: normal;
   display: optional;
 }
 
 @font-face {
-  font-family: "Basis Grotesque Pro";
-  src: url("/fonts/BasisGrotesquePro-Regular.ttf") format("opentype"),
-    url("/fonts/BasisGrotesquePro-Regular.eot") format("eot"),
-    url("/fonts/BasisGrotesquePro-Regular.woff") format("woff"),
-    url("/fonts/BasisGrotesquePro-Regular.woff2") format("woff2");
+  font-family: 'Basis Grotesque Pro';
+  src: url('/fonts/BasisGrotesquePro-Regular.ttf') format('opentype'),
+    url('/fonts/BasisGrotesquePro-Regular.eot') format('eot'),
+    url('/fonts/BasisGrotesquePro-Regular.woff') format('woff'),
+    url('/fonts/BasisGrotesquePro-Regular.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
   display: optional;
 }
 
 @font-face {
-  font-family: "Basis Grotesque Pro";
-  src: url("fonts/BasisGrotesquePro-Medium.ttf") format("opentype"),
-    url("fonts/BasisGrotesquePro-Medium.eot") format("eot"),
-    url("fonts/BasisGrotesquePro-Medium.woff") format("woff"),
-    url("fonts/BasisGrotesquePro-Medium.woff2") format("woff2");
+  font-family: 'Basis Grotesque Pro';
+  src: url('fonts/BasisGrotesquePro-Medium.ttf') format('opentype'),
+    url('fonts/BasisGrotesquePro-Medium.eot') format('eot'),
+    url('fonts/BasisGrotesquePro-Medium.woff') format('woff'),
+    url('fonts/BasisGrotesquePro-Medium.woff2') format('woff2');
   font-weight: 500;
   font-style: normal;
   display: optional;
 }
 
 @font-face {
-  font-family: "Basis Grotesque Pro";
-  src: url("/fonts/BasisGrotesquePro-Bold.ttf") format("opentype"),
-    url("/fonts/BasisGrotesquePro-Bold.eot") format("eot"),
-    url("/fonts/BasisGrotesquePro-Bold.woff") format("woff"),
-    url("/fonts/BasisGrotesquePro-Bold.woff2") format("woff2");
+  font-family: 'Basis Grotesque Pro';
+  src: url('/fonts/BasisGrotesquePro-Bold.ttf') format('opentype'),
+    url('/fonts/BasisGrotesquePro-Bold.eot') format('eot'),
+    url('/fonts/BasisGrotesquePro-Bold.woff') format('woff'),
+    url('/fonts/BasisGrotesquePro-Bold.woff2') format('woff2');
   font-weight: 700;
   font-style: normal;
   display: optional;
@@ -58,6 +58,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -71,20 +72,22 @@ body {
 
 .container {
   max-width: 1440px;
+  margin: 0 auto;
 }
 
 .heading-container__topic {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
   text-transform: uppercase;
   color: #0536fc;
   opacity: 0.9;
+  margin-bottom: 30px;
 }
 
 .heading {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 38px;
@@ -126,11 +129,13 @@ body {
 
 .section-1 {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 }
 
 .section-1 .heading-container {
+    margin-top: 30px;
     grid-column: 1 / 3 ;
+    align-self: center;
     display: flex;
     justify-content: flex-end;
 }
@@ -219,7 +224,7 @@ transform: rotate(45deg);
     margin-top: 50px;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1280px) {
   .section-1 {
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   }
@@ -238,6 +243,34 @@ transform: rotate(45deg);
 
   .link {
     height: 445px;
+  }
+
+  .link1::before,  .link2::after, .link3::after {
+    display: none;
+  }
+
+  .image1 {
+    order: 1;
+  }
+
+  .link1 {
+    order: 2;
+  }
+
+  .image2 {
+    order: 3;
+  }
+
+  .link2 {
+    order: 4;
+  }
+
+  .image3 {
+    order: 5;
+  }
+
+  .link3 {
+    order: 6;
   }
 
   .section-1 .heading-container {
