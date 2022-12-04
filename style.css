@@ -69,10 +69,6 @@ body {
     height: auto;
 }
 
-figure {
-    width: fit-content;
-}
-
 .container {
   max-width: 1440px;
 }
@@ -135,4 +131,40 @@ figure {
 
 .section-1 .heading-container {
     grid-column: 1 / 3 ;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.link {
+    display: grid;
+    grid-template-columns: 1fr 100px;
+    grid-template-rows: 1fr 100px;
+}
+
+.link__num {
+    margin-bottom: 30px;
+}
+
+.link .paragraph {
+    margin-left: 50px;
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+.arrow-container {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    width: fit-content;
+    height: fit-content;
+    align-self: end;
+    justify-self: end;
+}
+
+.arrow-container img {
+    padding: 25px;
+}
+
+.link-heading {
+    margin-left: 50px;
+    margin-top: 50px;
 }
