@@ -175,6 +175,15 @@ background: #FFFFFF;
 transform: rotate(45deg);
 }
 
+.link1:hover::before, .link2:hover::after, .link3:hover::after {
+  background-color: #0536fc;
+}
+
+.link:hover {
+  background-color: #0536fc;
+  color: white;
+}
+
 .link__num {
     margin-bottom: 30px;
 }
@@ -197,10 +206,12 @@ transform: rotate(45deg);
     height: fit-content;
     align-self: end;
     justify-self: end;
+    background-color: #fff;
 }
 
 .arrow-container img {
-    padding: 25px;
+  background-color: #fff;
+    padding: 35px;
 }
 
 .link-heading {
