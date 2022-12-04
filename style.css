@@ -64,6 +64,15 @@ body {
   background-color: #fff;
 }
 
+.image2 img, .image1 img, .image3 img {
+    width: 100%;
+    height: auto;
+}
+
+figure {
+    width: fit-content;
+}
+
 .container {
   max-width: 1440px;
 }
@@ -119,3 +128,7 @@ body {
   opacity: 0.6;
 }
 
+.section-1 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
