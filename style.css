@@ -66,7 +66,7 @@ body {
 
 .image2 img, .image1 img, .image3 img {
     width: 100%;
-    height: auto;
+    height: 100%;
 }
 
 .container {
@@ -136,13 +136,52 @@ body {
 }
 
 .link {
+  position: relative;
     display: grid;
     grid-template-columns: 1fr 100px;
     grid-template-rows: 1fr 100px;
 }
 
+.link1::before {
+    content: '';
+    position: absolute;
+    width: 30px;
+    top: 36px;
+    left: -15px;
+height: 30px;
+background: #FFFFFF;
+transform: rotate(45deg);
+}
+
+.link2::after{
+  content: '';
+  position: absolute;
+  width: 30px;
+  top: 36px;
+  right: -15px;
+height: 30px;
+background: #FFFFFF;
+transform: rotate(45deg);
+}
+
+.link3::after{
+  content: '';
+  position: absolute;
+  width: 30px;
+  top: 36px;
+  right: -15px;
+height: 30px;
+background: #FFFFFF;
+transform: rotate(45deg);
+}
+
 .link__num {
     margin-bottom: 30px;
+}
+
+.link-heading {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
 }
 
 .link .paragraph {
