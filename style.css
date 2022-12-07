@@ -63,6 +63,7 @@
 
 body {
   background-color: #fff;
+  font-family: 'Basis Grotesque Pro', sans-serif;
 }
 
 .image2 img,
@@ -100,7 +101,6 @@ body {
 }
 
 .link__num {
-  font-family: "Basis Grotesque Pro", sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 16px;
@@ -118,7 +118,6 @@ body {
 }
 
 .paragraph {
-  font-family: "Basis Grotesque Pro", sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
@@ -233,7 +232,6 @@ body {
 }
 
 .section-2__small-text {
-  font-family: 'Basis Grotesque Pro', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -261,7 +259,6 @@ body {
 }
 
 .num-item {
-  font-family: 'Basis Grotesque Pro', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 100px;
@@ -288,7 +285,7 @@ body {
 .section-2__list {
   list-style: none;
   display: flex;
- justify-content: space-between;
+  justify-content: space-between;
   margin-right: 80px;
   grid-column: 2 / 5;
   /* justify-self: end; */
