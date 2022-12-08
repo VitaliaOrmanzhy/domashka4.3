@@ -217,7 +217,7 @@ body {
   background-color: #fff;
 }
 
-.arrow-container img {
+.arrow {
   background-color: #fff;
   padding: 35px;
 }
@@ -262,6 +262,10 @@ body {
   font-style: normal;
   font-weight: 500;
   font-size: 100px;
+}
+
+.num__icon {
+  margin-right: 20px;
 }
 
 .issues .container2 {
